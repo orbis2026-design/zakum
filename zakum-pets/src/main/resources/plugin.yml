@@ -1,0 +1,15 @@
+name: ZakumPets
+main: net.orbis.zakum.pets.PetsPlugin
+version: ${version}
+api-version: "1.21"
+depend: [Zakum]
+commands:
+  pets:
+    description: Summon/manage RPG pets
+    usage: /pets
+    permission: zakum.pets
+permissions:
+  zakum.pets:
+    default: true
+  zakum.pets.admin:
+    default: op

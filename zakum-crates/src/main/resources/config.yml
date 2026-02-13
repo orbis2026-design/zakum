@@ -1,0 +1,27 @@
+crates:
+  starter:
+    name: "&bStarter Crate"
+    publicOpen: false
+    publicRadius: 8
+
+    key:
+      material: TRIPWIRE_HOOK
+      name: "&bStarter Key"
+      lore:
+        - "&7Use on a crate block"
+        - "&7or /zcrates open starter"
+      modelData: 0
+
+    rewards:
+      - weight: 70
+        messages:
+          - "&aYou won &f$250&a!"
+        commands:
+          - "eco give {player} 250"
+
+      - weight: 30
+        messages:
+          - "&dYou won a diamond!"
+        items:
+          - material: DIAMOND
+            amount: 1

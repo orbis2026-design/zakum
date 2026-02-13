@@ -1,0 +1,24 @@
+pets:
+  bunny:
+    name: "&fBunny"
+    entity: RABBIT
+    followMode: TELEPORT
+    hat:
+      material: WHITE_WOOL
+      name: "&fBunny Hat"
+    rideEntity: HORSE
+
+  bee:
+    name: "&eBee"
+    entity: BEE
+    followMode: TELEPORT
+    hat:
+      material: YELLOW_WOOL
+      name: "&eBee Hat"
+    rideEntity: PIG
+
+follow:
+  intervalTicks: 10
+
+flush:
+  intervalSeconds: 10

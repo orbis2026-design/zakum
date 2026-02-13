@@ -1,0 +1,15 @@
+name: ZakumCrates
+main: net.orbis.zakum.crates.CratesPlugin
+version: ${version}
+api-version: "1.21"
+depend: [Zakum]
+commands:
+  zcrates:
+    description: Zakum crates admin/user command
+    usage: /zcrates
+    permission: zakum.crates
+permissions:
+  zakum.crates:
+    default: true
+  zakum.crates.admin:
+    default: op

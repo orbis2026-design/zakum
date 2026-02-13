@@ -1,0 +1,20 @@
+pets:
+  wolf:
+    name: "&fWolf"
+    entity: WOLF
+    followMode: AI
+    xpPerMobKill: 10
+
+  parrot:
+    name: "&aParrot"
+    entity: PARROT
+    followMode: AI
+    xpPerMobKill: 12
+
+levels:
+  maxLevel: 50
+  xpBase: 100
+  xpGrowth: 1.15
+
+flush:
+  intervalSeconds: 5

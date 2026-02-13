@@ -1,0 +1,15 @@
+name: ZakumMiniaturePets
+main: net.orbis.zakum.minipets.MiniPetsPlugin
+version: ${version}
+api-version: "1.21"
+depend: [Zakum]
+commands:
+  mpets:
+    description: Summon/manage cosmetic pets
+    usage: /mpets
+    permission: zakum.minipets
+permissions:
+  zakum.minipets:
+    default: true
+  zakum.minipets.admin:
+    default: op

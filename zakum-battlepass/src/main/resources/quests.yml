@@ -1,0 +1,21 @@
+# v1 sample quests (jar resource)
+quests:
+  break_stone_50:
+    name: "Stone Miner"
+    points: 25
+    premiumBonusPoints: 10
+    steps:
+      - type: "block_break"
+        key: "material"
+        value: "STONE"
+        required: 50
+
+  premium_kill_zombies_25:
+    name: "VIP Zombie Cleanup"
+    points: 50
+    premiumOnly: true
+    steps:
+      - type: "mob_kill"
+        key: "entity"
+        value: "ZOMBIE"
+        required: 25

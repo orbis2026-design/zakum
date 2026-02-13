@@ -1,0 +1,20 @@
+battlepass:
+  # SERVER: premium is evaluated per server_id.
+  # GLOBAL: premium is evaluated network-wide (Velocity-style entitlement).
+  premiumScope: "SERVER"
+  premiumEntitlementKey: "battlepass_premium"
+
+  # Optional override for progress scoping.
+  progressServerIdOverride: ""
+
+  seasons:
+    current: 1
+    resetOnSeasonChange: true
+
+  flush:
+    # seconds
+    intervalSeconds: 5
+
+  premiumRefresh:
+    # seconds (how often to refresh entitlement state for online players)
+    intervalSeconds: 300

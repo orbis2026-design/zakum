@@ -1,0 +1,12 @@
+name: ZakumBattlePass
+version: ${version}
+main: net.orbis.zakum.battlepass.BattlePassPlugin
+api-version: "1.21"
+author: Orbis Network
+description: BattlePass (v1 scaffold) built on Zakum.
+depend: [Zakum]
+
+commands:
+  battlepass:
+    description: BattlePass command
+    usage: /battlepass
