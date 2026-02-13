@@ -1,28 +1,21 @@
 server:
-  id: "survival"
+  id: "survival-01" 
 
 database:
-  enabled: true
+  type: MYSQL
   host: "127.0.0.1"
   port: 3306
-  database: "zakum"
-  user: "root"
-  password: "change-me"
-  params: "useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC"
+  database: "orbis_production"
+  username: "admin"
+  password: "change_me"
+  maximumPoolSize: 20
+  connectionTimeout: 5000
+  properties:
+    cachePrepStmts: true
+    prepStmtCacheSize: 250
+    rewriteBatchedStatements: true
+    useServerPrepStmts: true
 
-  pool:
-    maxPoolSize: 10
-    minIdle: 2
-    connectionTimeoutMs: 5000
-    validationTimeoutMs: 2500
-    idleTimeoutMs: 600000
-    maxLifetimeMs: 1800000
-    leakDetectionMs: 0
-
-  failover:
-    retrySeconds: 30
-
-controlPlane:
-  enabled: false
-  baseUrl: "http://127.0.0.1:8080"
-  apiKey: ""
+safety:
+  max_actions_per_second: 15
+  circuit_breaker_enabled: true
